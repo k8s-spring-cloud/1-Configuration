@@ -5,17 +5,17 @@ server:
 management:
   security:
     enabled: false
-eureka:
-    instance:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-    client:
-      serviceUrl:
-        defaultZone: http://wb3-k8s-msdiscovery.svc.cluster.local/eureka/
-      healthcheck:
-        enabled: true
-      registerWithEureka: true
-      fetchRegistry: true
-      registry-fetch-interval-seconds: 5
+# eureka:
+#     instance:
+#       instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+#     client:
+#       serviceUrl:
+#         defaultZone: https://wb3-k8s-msdiscovery.svc.cluster.local/eureka/
+#       healthcheck:
+#         enabled: true
+#       registerWithEureka: true
+#       fetchRegistry: true
+#       registry-fetch-interval-seconds: 5
 logging:
   level:
     ROOT: INFO
