@@ -1,2 +1,16 @@
 ---
-wb3: 'hello'
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  datacenter: kubernetes
+  environment: development
+  instance:
+    instance-id: ${spring.application.name}:${random.int}
+server:
+  port: 8761
+spring:
+  application:
+    name: wb3-msdiscovery
+  profiles:
+    active: default
