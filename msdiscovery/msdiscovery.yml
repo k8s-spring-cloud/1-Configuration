@@ -5,8 +5,8 @@ eureka:
     fetch-registry: false
   datacenter: kubernetes
   environment: development
-  instance:
-    instance-id: ${spring.application.name}:${random.int}
+info:
+  component: WB3 K8s - Spring Cloud - NetFlix OSS Eureka Service Discovery
 server:
   port: 8761
 spring:
