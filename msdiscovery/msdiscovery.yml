@@ -11,6 +11,6 @@ server:
   port: 8761
 spring:
   application:
-    name: wb3-msdiscovery
+    name: wb3-k8s-msdiscovery
   profiles:
     active: default
