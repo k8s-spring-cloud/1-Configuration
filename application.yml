@@ -8,7 +8,7 @@ management:
 eureka:
   client:
     serviceUrl:
-    defaultZone: https://wb3-k8s-msdiscovery.svc.cluster.local/eureka/
+    defaultZone: http://service-discovery.svc.cluster.local/eureka/
     healthcheck:
       enabled: true
   fetchRegistry: true
