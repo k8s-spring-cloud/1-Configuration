@@ -4,7 +4,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
   datacenter: kubernetes
-  environment: development
+  environment: production
 info:
   component: WB3 K8s - Spring Cloud - NetFlix OSS Eureka Service Discovery
 server:
