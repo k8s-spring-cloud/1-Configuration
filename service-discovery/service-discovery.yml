@@ -1,14 +1,7 @@
 ---
+info:
+  component: WB3 K8s - Spring Cloud - NetFlix OSS Eureka Service Discovery
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-  datacenter: kubernetes
-  environment: production
-info:
-  component: WB3 K8s - Spring Cloud - NetFlix OSS Eureka Service Discovery
-server:
-  port: 80
-spring:
-  profiles:
-    active: default

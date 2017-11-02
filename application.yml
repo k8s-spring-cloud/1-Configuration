@@ -6,12 +6,14 @@ management:
   security:
     enabled: false
 eureka:
+  datacenter: kubernetes
+  environment: production
   client:
+    fetch-registry: true
     serviceUrl:
       defaultZone: http://service-discovery.default.svc.cluster.local/eureka/
     healthcheck:
       enabled: true
-  fetchRegistry: true
   instance:
     instance-id: ${spring.application.name}:${random.int}
   registerWithEureka: true
