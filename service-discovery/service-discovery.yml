@@ -4,13 +4,11 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
   datacenter: kubernetes
-  environment: development
+  environment: production
 info:
   component: WB3 K8s - Spring Cloud - NetFlix OSS Eureka Service Discovery
 server:
-  port: 8761
+  port: 80
 spring:
-  application:
-    name: wb3-k8s-msdiscovery
   profiles:
     active: default
