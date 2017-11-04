@@ -1,3 +1,11 @@
 ---
 info:
   component: WB3 K8s - Spring Cloud - NetFlix OSS Zuul Edge Gateway
+ribbon:
+  eureka:
+    enabled: true
+zuul:
+  routes:
+    serviceDiscovery:
+      path: /discovery/**
+      url: http://service-discovery.default.svc.cluster.local/*
