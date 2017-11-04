@@ -6,15 +6,20 @@ Within this section you'll find all infromation neccessary to understand the cro
 
 ### Resource URIs
 * Spring Cloud | Configuration Server
-  * Cluster URI : https://github.com/k8s-spring-cloud/1-Configuration
-  * Git: [In work]
+  * Cluster URI : http://service-discovery.default.svc.cluster.local/eureka/
+  * Git: https://github.com/k8s-spring-cloud/config-server
+  * Docker Image: https://hub.docker.com/r/k8springcloud/config-server/
 * Spring Cloud | NetFlix OSS - Eureka Service Discovery Server
-  * Cluster URI : https://wb3-k8s-msdiscovery.svc.cluster.local/eureka/
-  * Git: [In work]
+  * Cluster URI : https://service-discovery.default.svc.cluster.local/eureka/
+  * Git: https://github.com/k8s-spring-cloud/service-discovery
+  * Docker Image: https://hub.docker.com/r/k8springcloud/service-discovery/
 * Spring Cloud | NetFlix OSS - Zuul Edge Server
-  * Cluster URI : https://wb3-k8s-edgeserver.svc.cluster.local
-  * Git: [In work]
-
+  * Cluster URI : https://edge-gateway.default.svc.cluster.local/eureka/
+  * Git: https://github.com/k8s-spring-cloud/edge-gateway
+  * Docker Image: https://hub.docker.com/r/k8springcloud/edge-gateway/
+  
+  
+  
 ## Software Servies
 These are links and information about the sample micro-services being utilized for this project.
 
