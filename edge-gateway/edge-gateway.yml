@@ -7,5 +7,5 @@ ribbon:
 zuul:
   routes:
     serviceDiscovery:
-      path: /discovery/
-      url: http://consul:8500
+      path: /discovery/**
+      url: http://consul:8500/
