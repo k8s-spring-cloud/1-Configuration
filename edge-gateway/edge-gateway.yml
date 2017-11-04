@@ -8,5 +8,5 @@ zuul:
   routes:
     serviceDiscovery:
       path: /discovery/**
-      url: http://consul:8500/
+      url: http://consul:8500
       stripPrefix: false
