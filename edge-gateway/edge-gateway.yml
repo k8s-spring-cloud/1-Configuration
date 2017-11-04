@@ -8,4 +8,4 @@ zuul:
   routes:
     serviceDiscovery:
       path: /discovery/**
-      url: http://service-discovery.default.svc.cluster.local/eureka/
+      url: http://service-discovery.default.svc.cluster.local
