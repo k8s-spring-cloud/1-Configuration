@@ -2,22 +2,17 @@
 ---
 server:
   port: 80
+spring:
+  cloud:
+    consul:
+      host: http://service-discovery
+      port: 8500
+      discovery:
+        healthCheckInterval: 15s
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 management:
   security:
     enabled: false
-eureka:
-  datacenter: kubernetes
-  environment: production
-  client:
-    fetch-registry: true
-    registerWithEureka: true
-    serviceUrl:
-      defaultZone: http://service-discovery.default.svc.cluster.local/eureka/
-    healthcheck:
-      enabled: true
-  instance:
-    instance-id: ${spring.application.name}:${random.int}
-  registry-fetch-interval-seconds: 15
 logging:
   level:
     ROOT: INFO
