@@ -8,4 +8,4 @@ zuul:
   routes:
     serviceDiscovery:
       path: /discovery/**
-      url: http://consul.default.svc.cluster.local:8500/*
+      url: 8500.tcp.consul.default.svc.cluster.local:8500/*
