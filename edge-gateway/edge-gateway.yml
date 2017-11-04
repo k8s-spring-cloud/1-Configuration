@@ -9,3 +9,4 @@ zuul:
     serviceDiscovery:
       path: /discovery/**
       url: http://consul:8500/
+      stripPrefix: true
