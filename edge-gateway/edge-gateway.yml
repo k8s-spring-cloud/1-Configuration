@@ -4,11 +4,6 @@ info:
 ribbon:
   eureka:
     enabled: true
-spring: 
-  cloud:
-    consul:
-      host: http://consul
-      port: 8500
 zuul:
   routes:
     serviceDiscovery:
