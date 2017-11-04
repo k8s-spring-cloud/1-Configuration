@@ -1,7 +1,7 @@
 ---
 info:
   component: WB3 K8s - Spring Cloud - NetFlix OSS Eureka Service Discovery
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+# eureka:
+#   client:
+#     register-with-eureka: false
+#     fetch-registry: false
