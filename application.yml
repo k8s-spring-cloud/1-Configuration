@@ -5,7 +5,7 @@ server:
 spring:
   cloud:
     consul:
-      host: http://service-discovery
+      host: http://consul
       port: 8500
       discovery:
         healthCheckInterval: 15s
