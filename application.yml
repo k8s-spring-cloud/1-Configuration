@@ -9,8 +9,10 @@ spring:
         enabled: false
         watch:
           enabled: false
-      host: http://service-discovery
-      port: 8500
+      enabled: ${SERVICE_DISCOVERY_ENABLED}
+      host: ${SERVICE_DISCOVERY_HOST}
+      port: ${SERVICE_DISOVERY_PORT}
+      token: ${SERVICE_DISCOVERY_TOKEN}
       discovery:
         healthCheckInterval: 15s
         instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
