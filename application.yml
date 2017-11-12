@@ -5,6 +5,10 @@ server:
 spring:
   cloud:
     consul:
+      config:
+        enabled: false
+        watch:
+          enabled: false
       host: http://service-discovery
       port: 8500
       discovery:
